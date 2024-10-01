@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-size: 0.9rem;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px hsl(220, 15%, 55%);
+  padding: 15px;
+  min-height: 200px;
+  text-align: center;
+  width: 220px;
+}
+
+h2 {
+  font-size: 1rem;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+  line-height: 1.5rem;
+  color: hsl(202, 83%, 21%);
+}
+
+p {
+  font-size: 0.8rem;
+  color: hsl(220, 15%, 55%);
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 1rem;
+}
+
+img {
+  border-radius: 0.3rem;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+footer {
+  width: 250px;
+  font-size: 0.6rem;
+}
